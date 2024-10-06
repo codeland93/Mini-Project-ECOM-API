@@ -1,0 +1,169 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333; /* Darker text for readability */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Root Container */
+#root {
+  max-width: 1200px; /* Slightly reduced max-width for better layout */
+  margin: 0 auto; /* Center the content */
+  padding: 2rem; /* Padding around the content */
+  text-align: center; /* Center text */
+  background-color: #ffffff; /* White background for main content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+/* Logo Styles */
+.logo {
+  height: 5em; /* Slightly smaller logo height */
+  padding: 1rem; /* Padding around logo */
+  transition: transform 300ms; /* Smooth transition for transformations */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Logo Spin Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Spin animation for logo */
+  }
+}
+
+/* Card Styles */
+.card {
+  padding: 2em; /* Padding for cards */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #ffffff; /* White background for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 1em 0; /* Margin around cards */
+}
+
+/* Read the Docs Styles */
+.read-the-docs {
+  color: #888; /* Light gray text */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #343a40; /* Dark navbar */
+  padding: 1rem; /* Padding around navbar items */
+  border-bottom: 2px solid #495057; /* Bottom border for separation */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff !important; /* Ensure links are white */
+  margin: 0 15px; /* Space out links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Change color on hover */
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px; /* Button padding */
+  font-size: 1rem; /* Button text size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border: none; /* No border */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Danger button color */
+  border: none; /* No border */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: 5px; /* Rounded alert corners */
+  margin-bottom: 20px; /* Space below alerts */
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 10px; /* Rounded modal corners */
+}
+
+.modal-header {
+  border-bottom: none; /* Remove default border */
+}
+
+.modal-title {
+  font-weight: bold; /* Bold modal title */
+}
+
+.modal-body {
+  padding: 20px; /* Padding in modal body */
+}
+
+/* Form Styles */
+.form-control {
+  border-radius: 5px; /* Rounded input corners */
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow effect */
+  border-color: #007bff; /* Border color on focus */
+}
+
+/* Table Styles */
+.table {
+  margin-top: 20px; /* Space above the table */
+  background-color: #ffffff; /* White background for table */
+  border-radius: 5px; /* Rounded table corners */
+  overflow: hidden; /* Rounded corners */
+}
+
+.table th {
+  background-color: #343a40; /* Dark header background */
+  color: white; /* White header text */
+}
+
+/* Spinner Styles */
+.spinner-border {
+  margin: 20px auto; /* Center spinner */
+  display: block; /* Block display */
+}
