@@ -37,7 +37,7 @@ Make sure you have the following installed:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/codeland93/E-Com-Mini-Project-.git
+   git clone https://github.com/codeland93/Mini-Project-ECOM-API
    ```
 
 2. **Frontend Setup:**
